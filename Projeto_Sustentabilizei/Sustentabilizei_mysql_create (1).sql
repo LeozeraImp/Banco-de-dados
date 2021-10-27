@@ -9,7 +9,7 @@ CREATE TABLE `Tema` (
 CREATE TABLE `Usuario` (
 	`id` bigint NOT NULL AUTO_INCREMENT,
 	`nome` varchar(255) NOT NULL,
-	`email` varchar(255) NOT NULL,
+	`usuario` varchar(255) NOT NULL,
 	`senha` varchar(255) NOT NULL,
 	PRIMARY KEY (`id`)
 );
@@ -18,8 +18,8 @@ CREATE TABLE `Postagens` (
 	`id` bigint NOT NULL AUTO_INCREMENT,
 	`titulo` varchar(255) NOT NULL,
 	`conteudo` varchar(255) NOT NULL,
-	`comentario` varchar(255) NOT NULL,
-	`interacao` varchar(255) NOT NULL,
+	`midia` varchar(255) NOT NULL,
+	`hashtag` varchar(255) NOT NULL,
 	`tema_id` bigint NOT NULL,
 	`usuario_id` bigint NOT NULL,
 	PRIMARY KEY (`id`)
